@@ -18,6 +18,9 @@ requestUrlEl.addEventListener("change", function(event){
 requestMethodEl.addEventListener("change", function(event) {
     formData.requestMethod = event.target.value;
 });
+requestBodyEl.addEventListener("change", function(event){
+    formData.requestBody = event.target.value;
+});
 
 function updateUI(jsonData) {
     responseStatusEl.value = jsonData.code;
